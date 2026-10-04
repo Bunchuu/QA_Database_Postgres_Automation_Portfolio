@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python, pytest, linter cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# macOS files
+.DS_Store
+
+# Logs
+*.log
+
+# Database & Docker local storage
+pgdata/
+.env
