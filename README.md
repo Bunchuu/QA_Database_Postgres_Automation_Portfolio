@@ -47,6 +47,7 @@ QA_Database_Postgres_Automation_Portfolio/
 ├── .gitignore                 # Git ignore rules
 ├── docker-compose.yml         # Containerized PostgreSQL 16 database configuration
 ├── conftest.py                # Centralized pytest fixtures with automatic transaction rollback
+├── pytest.ini                 # Pytest runner configuration
 ├── requirements.txt           # Project dependencies (psycopg2-binary, pytest, ruff)
 ├── sql/
 │   └── init_db.sql            # Database schema definition (DDL) and seed records (DML)
@@ -96,5 +97,5 @@ docker exec -i qa_postgres_container psql -U test_user -d qa_test_db < sql/init_
 
 ### 3. Execute the test suite:
 ```bash
-pytest -v
+pytest
 ```
