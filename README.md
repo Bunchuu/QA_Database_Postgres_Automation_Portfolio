@@ -8,21 +8,21 @@
 
 Automated database testing framework verifying relational data integrity, schema consistency, transactions, and foreign key constraints on PostgreSQL within a Docker container.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Language:** Python 3.14
 * **Testing Framework:** pytest
 * **Database Driver:** psycopg2-binary
 * **Database Engine:** PostgreSQL 16 (Docker)
 * **Code Quality & Linter:** Ruff
 
-## 🎯 Test Scope & Coverage
+## Test Scope & Coverage
 * **Connection & Version:** Engine verification via SELECT version().
 * **Aggregation & Filtering:** Record counts and conditional filtering via COUNT(*) and WHERE.
 * **Relational Integrity (JOIN):** Foreign key (1:N) relationship verification between users and roles.
 * **Transaction Isolation:** Verification of INSERT statements with automated transaction rollback in pytest fixtures.
 * **Integrity Constraints:** Negative test case verifying psycopg2.errors.ForeignKeyViolation when inserting orphan foreign keys.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Start the PostgreSQL Container
 ```bash
